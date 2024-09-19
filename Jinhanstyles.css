@@ -1,0 +1,32 @@
+body {
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2001px;
+  
+}
+
+.content {
+  width: 50%;
+  height: 50%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 230, 4);
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.inContent {
+  height: 50%;
+  width: 50%;
+}

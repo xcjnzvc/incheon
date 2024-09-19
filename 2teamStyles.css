@@ -1,0 +1,63 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Container for the whole content */
+.container {
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Main Title Style */
+h1 {
+  font-size: 3em;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Team Section */
+.team {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.team a {
+  font-size: 1.5em;
+  color: #333;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.team a:hover {
+  color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2.5em;
+  }
+
+  .team a {
+      font-size: 1.3em;
+      text-decoration: none;
+      color: #333;
+      font-size: 30px;
+  }
+}
