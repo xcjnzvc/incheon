@@ -1,0 +1,29 @@
+.inner{
+    margin: 0 auto;
+    padding: 100px 400px;
+    text-align: center;
+}
+
+h2{
+    font-size: 38px;
+}
+.box_inner, .box_inner2{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between
+}
+
+.box_inner2{
+    flex-direction: column;
+}
+
+span{
+    font-size: 20px;
+    /* font-weight: 600; */
+}
+
+p{
+    color: #666;
+    font-size: 18px;
+    line-height: 26px;
+}
