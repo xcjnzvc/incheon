@@ -24,11 +24,20 @@
         <li><a href="#introduce">자기소개</a></li>
         <li><a href="#hobby">취미</a></li>
         <li><a href="#tmi">TMI</a></li>
+        <li><a href="#playground">놀이터</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="name" id="name">현우 a.k.a. ChoboDev</section>
+    <section class="name" id="name">
+      <p>아래 흐린 글씨에 마우스를 올리거나 클릭해보세요~!</p><br/>
+      <h2 class="realname">현우 a.k.a. ChoboDev</h2>
+      <dl class="more-info">
+        <dt role="button"><button class="cont">👉 내 정보 자세히 확인하기</button></dt>
+        <dd class="hidden">비밀이지롱~ 🤪</dd>
+      </dl>
+      <a href="#playground">더 많은 새 기능은 놀이터로 가세요~</a>
+    </section>
     <section class="mbti" id="mbti">
       <span>나의 MBTI : INTP(바뀌지 않음!) <a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-intp" target="_blank">[보러가기]</a></span>
     </section>
@@ -51,11 +60,17 @@
     <section class="tmi" id="tmi">
       <p>TMI : 멀티플레이 게임서버를 돌리고 있습니다.(팩토리오, 마인크래프트 등)</p>
     </section>
+    <section class="playground" id="playground">
+      <div class="my-heart">나의 마음</div>
+      <input type="text" id="flow" name="flow" placeholder="나의 마음을 입력해보세요~!" />
+      <div id="ghost">👻</div>
+    </section>
   </main>
   <footer id="fnb">
     <section class="copyright">
       <span>&copy; 2024 ChoboDev</span>
     </section>
   </footer>
+  <script src="chobodev.js"></script>
 </body>
 </html>
