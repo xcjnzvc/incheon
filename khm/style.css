@@ -4,6 +4,9 @@
   box-sizing: border-box;
   list-style: none;
 }
+*::-webkit-scrollbar {
+  display: none;
+}
 :root {
   --mainGray: #282936;
 }
@@ -88,5 +91,27 @@ ul li:first-child .label::before {
   font-size: 20px;
   outline: none;
   border-radius: 5px;
-  padding:5px;
+  padding: 5px;
+}
+
+.myMind {
+  font-size: 50px;
+  background: var(--mainGray);
+  width: 5rem;
+  text-align: center;
+  line-height: 150%;
+  border-radius: 10%;
+  position: fixed;
+  top: 10%;
+  right: 3%;
+  transition: 0.5s;
+}
+.newDiv {
+  background: var(--mainGray);
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  bottom: 0;
 }
