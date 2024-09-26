@@ -1,0 +1,16 @@
+body{
+    margin-top: 10rem;
+    margin-left: 10rem;
+
+
+button{
+    height: 3rem;
+    width: 100rem;
+    background-color: darkgray;
+    color: antiquewhite;
+}
+p{
+    width: 100rem;
+    text-align: center;
+    color: grey;
+}
