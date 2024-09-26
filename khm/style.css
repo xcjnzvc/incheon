@@ -4,6 +4,12 @@
   box-sizing: border-box;
   list-style: none;
 }
+*::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  --mainGray: #282936;
+}
 
 main {
   width: 62rem;
@@ -11,14 +17,13 @@ main {
   margin: auto;
 }
 h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   font-size: 2.5rem;
 }
 h3 {
   font-weight: 500;
   color: rgb(255, 73, 73);
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  font-size: 16px;
 }
 ul {
   border-radius: 5px;
@@ -39,8 +44,9 @@ ul li div {
   padding: 1rem;
   font-weight: 500;
 }
+
 .label {
-  background: #282936;
+  background: var(--mainGray);
   color: #fff;
   cursor: pointer;
   z-index: 99;
@@ -53,8 +59,6 @@ ul li:first-child .label::before {
   color: rgb(255, 73, 73);
 }
 .content {
-  /* border-left: 2px solid #777;
-  border-right: 2px solid #777; */
 }
 .content a {
   color: #000;
@@ -69,20 +73,45 @@ ul li:first-child .label::before {
 .content.on {
   animation: anis 1s forwards;
 }
-/* @keyframes anis {
-  0% {
-    padding: 0;
-    height: 0;
-    opacity: 0;
-  }
 
-  50% {
-    height: auto;
-    display: block;
-  }
-  100% {
-    opacity: 1;
-    padding: 1rem;
-    height: auto;
-  }
-} */
+.skyblue {
+  color: #000;
+  background: #206eff;
+}
+.description {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.insert {
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--mainGray);
+  font-weight: 600;
+  font-size: 20px;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.myMind {
+  font-size: 50px;
+  background: var(--mainGray);
+  width: 5rem;
+  text-align: center;
+  line-height: 150%;
+  border-radius: 10%;
+  position: fixed;
+  top: 10%;
+  right: 3%;
+  transition: 0.5s;
+}
+.newDiv {
+  background: var(--mainGray);
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  bottom: 0;
+}
