@@ -2,17 +2,20 @@ import styles from "./header.module.css";
 
 export function Header() {
   return (
-    <header>
+    <header className={styles.header}>
       <div className={styles.logo}>KANG</div>
-      <nav>
-        <ul>
+      <nav className={styles.nav}>
+        <ul className={styles.list}>
           <li>관광명소</li>
           <li>음식</li>
           <li>역사</li>
           <li>테스트</li>
         </ul>
+        <select id="language" name="language" className={styles.lang}>
+          <option value="ko">KO</option>
+          <option value="en">EN</option>
+        </select>
       </nav>
-      <button>KO</button>
     </header>
   );
 }
