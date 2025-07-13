@@ -1,29 +1,32 @@
 import Select from "react-select";
 import type { SingleValue } from "react-select";
-
-type LanguageOption = {
-  value: string;
-  label: string;
-};
-
-const options: LanguageOption[] = [
-  { value: "ko", label: "KO" },
-  { value: "en", label: "EN" },
-];
+import { useLanguage } from "../hooks/useLanguage";
+import { useTranslation } from "../hooks/useTranslation";
+import { SUPPORTED_LANGUAGES, type LanguageConfig } from "../config/languages";
 
 export default function LanguageSelector() {
-  const handleChange = (selectedOption: SingleValue<LanguageOption>) => {
+  const { language, setLanguage } = useLanguage();
+  const { t } = useTranslation();
+
+  const handleChange = (selectedOption: SingleValue<LanguageConfig>) => {
     if (selectedOption) {
-      console.log("언어 선택됨:", selectedOption.value);
+      setLanguage(selectedOption.code);
     }
   };
 
+  const currentOption = SUPPORTED_LANGUAGES.find(
+    (lang) => lang.code === language
+  );
+
   return (
     <Select
-      options={options}
-      defaultValue={options[0]}
+      options={SUPPORTED_LANGUAGES}
+      value={currentOption}
       onChange={handleChange}
       isSearchable={false}
+      placeholder={t("language_select")}
+      className="language-selector"
+      classNamePrefix="language-selector"
     />
   );
 }
