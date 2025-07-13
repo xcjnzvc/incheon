@@ -1,20 +1,21 @@
 import styles from "./header.module.css";
+import { useTranslation } from "../hooks/useTranslation";
+import LanguageSelector from "./LanguageSelector";
 
 export function Header() {
+  const { t } = useTranslation();
+
   return (
     <header className={styles.header}>
       <div className={styles.logo}>KANG</div>
       <nav className={styles.nav}>
         <ul className={styles.list}>
-          <li>관광명소</li>
-          <li>음식</li>
-          <li>역사</li>
-          <li>테스트</li>
+          <li>{t("nav_attractions")}</li>
+          <li>{t("nav_food")}</li>
+          <li>{t("nav_history")}</li>
+          <li>{t("nav_test")}</li>
         </ul>
-        <select id="language" name="language" className={styles.lang}>
-          <option value="ko">KO</option>
-          <option value="en">EN</option>
-        </select>
+        <LanguageSelector />
       </nav>
     </header>
   );
