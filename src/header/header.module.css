@@ -14,6 +14,8 @@
 .nav {
   border: 1px solid blue;
   display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .list {
@@ -28,4 +30,34 @@
   font-weight: 600;
   font-size: 14px;
   border: none;
+}
+
+/* LanguageSelector 스타일 */
+.language-selector {
+  min-width: 120px;
+}
+
+.language-selector__control {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-height: 36px;
+}
+
+.language-selector__control--is-focused {
+  border-color: #007bff;
+  box-shadow: 0 0 0 1px #007bff;
+}
+
+.language-selector__option {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.language-selector__option--is-selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.language-selector__option--is-focused {
+  background-color: #f8f9fa;
 }
